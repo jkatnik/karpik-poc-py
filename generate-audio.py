@@ -32,7 +32,7 @@ def synthesize(text, config):
     '''
 
     response = polly_client.synthesize_speech(
-        Engine='standard',  # standard|neural - neural nie obsługuje max-duration
+        Engine='neural',  # standard|neural - neural nie obsługuje max-duration
         VoiceId= config.voice,
         LanguageCode='en-US',
         OutputFormat='mp3',
@@ -67,7 +67,7 @@ if __name__ == '__main__':
         'movie_file_name': 'udemy_sample_02.mp4',
         'audio_file_name': 'udemy_sample_02.mp3',
         'captions_format': 'srt',  # srt | ttv
-        'voice': 'Joey',  # Joey | Matthew
+        'voice': 'Kevin',  # Joey | Matthew | Kids: Kevin
     })
 
     polly_client = boto3.Session().client('polly')
