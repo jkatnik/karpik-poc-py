@@ -1,0 +1,203 @@
+1
+00:00:00,729  -->  00:00:06,690
+In this part, I will share some tips to help you learn, and get the maximum value from this course.
+
+2
+00:00:10,780  -->  00:00:14,100
+The first tip, make yourself comfortable.
+
+3
+00:00:14,460  -->  00:00:18,960
+Grab a hot drink, some cake, and a warm blanket if you have to.
+
+5
+00:00:19,260  -->  00:00:23,500
+Enjoy learning new things, and keep your spirit high.
+
+6
+00:00:23,940  -->  00:00:26,240
+Thank you for purchasing this course.
+
+7
+00:00:30,180  -->  00:00:37,020
+Some students that learning online, what they
+do is watching the video, and type along to the code or instructions.
+
+9
+00:00:39,700  -->  00:00:47,460
+This means, when the lesson type a line, the
+student also type a line, or pausing the video so often.
+
+11
+00:00:49,040  -->  00:00:52,820
+So basically, the student type along with the instructor.
+
+12
+00:00:54,560  -->  00:01:02,020
+My recommendation, is you watch the lecture
+for about five to ten minutes, without typing
+or if the lecture is quite long like 20 minutes
+or more, pause the video for about every ten minutes.
+
+15
+00:01:11,960  -->  00:01:19,620
+Within that ten minutes period, try to understand:
+what are the code or instructions, what are the purpose behind them.
+
+17
+00:01:22,080  -->  00:01:27,120
+Then you try to replicate them at your environment.
+
+18
+00:01:27,520  -->  00:01:34,400
+So, instead of just copying the code or instruction,
+you get understanding of what is going on and absorb that knowledge.
+
+20
+00:01:41,440  -->  00:01:44,540
+The next tip is actually about me.
+
+21
+00:01:44,820  -->  00:01:53,340
+I’m not a native english speaker, so for
+some of you, my accent might unusual or even weird.
+
+22
+00:01:56,540  -->  00:02:02,160
+In such case, I provide the english subtitle
+for most of my lectures.
+
+23
+00:02:02,480  -->  00:02:08,840
+The english subtitle is not an auto generated
+one, but I type it manually, so it will be almost 100% accurate.
+
+25
+00:02:11,000  -->  00:02:13,860
+You can turn on the subtitle from here.
+
+26
+00:02:21,100  -->  00:02:25,780
+Or maybe I’m speaking too slow, or too fast.
+
+27
+00:02:26,020  -->  00:02:30,500
+In that case, you can change the playback
+speed using this button.
+
+28
+00:02:43,620  -->  00:02:51,340
+The curriculum is designed to increase step-by-step,
+so we start slow at the beginning, but then we run faster.
+
+30
+00:02:53,120  -->  00:02:56,800
+I recommend that you are not skip any of the
+lectures.
+
+31
+00:02:57,520  -->  00:03:02,800
+If you skip one or more lecture, you might
+get lost in later lecture.
+
+32
+00:03:03,400  -->  00:03:09,800
+However, if there is any optional lecture,
+or something that basically a tip, I will make a note on such lecture, so you can skip it without much missing knowledge.
+
+34
+00:03:19,540  -->  00:03:25,240
+At some point, you might get stuck on a lecture,
+and it’s OK.
+
+35
+00:03:25,240  -->  00:03:28,380
+It’s the joy of learning new things.
+
+36
+00:03:28,380  -->  00:03:34,760
+We get stuck, we try to find out the solution,
+and when we find the solution, we can feel such happy feeling when we overcome challenge.
+
+38
+00:03:38,320  -->  00:03:43,300
+But, not all of us has enough time to find the solution.
+
+39
+00:03:43,620  -->  00:03:47,040
+In such case, I recommend few tips:
+
+40
+00:03:49,360  -->  00:03:56,340
+1st, if it’s about the course content, find
+out the Q and A section on the course.
+
+41
+00:03:59,740  -->  00:04:04,620
+You can find similar issue there, or ask the
+question to instructor.
+
+42
+00:04:07,360  -->  00:04:10,780
+2nd, go to stack overflow.
+
+43
+00:04:11,140  -->  00:04:16,780
+You know, stack overflow is like a global
+knowledge for programming questions.
+
+44
+00:04:17,500  -->  00:04:21,040
+Or you can always google.
+
+45
+00:04:24,760  -->  00:04:29,680
+At some time during the course, udemy might
+ask you to rate the course.
+
+46
+00:04:29,680  -->  00:04:36,910
+Please give a rate and review, so I can keep
+improve the course, and some other people can also understand the course strength and
+weakness before they purchase it.
+
+48
+00:04:44,340  -->  00:04:49,980
+If software to be installed is newer than
+that being used in this course, it should be OK as long as the major version has not
+change.
+
+50
+00:04:54,860  -->  00:05:00,380
+For example, in some of my java courses, I
+use Spring boot 2.
+
+51
+00:05:01,480  -->  00:05:06,980
+When recording the video, I might use spring boot version 2.2 but then spring boot updated to version 2.4
+Since the major version still version 2, the course should still relevant.
+
+54
+00:05:19,320  -->  00:05:26,840
+If you use spring boot 1 or spring boot 3,
+the course might still be usable, but need adjustment.
+
+55
+00:05:26,840  -->  00:05:31,200
+Or its not usable at all, depends on the product.
+
+56
+00:05:32,000  -->  00:05:37,700
+In some technical course, it is normal if
+you find minor difference between source code
+or screen design in video, and the resource
+provided on lecture.
+
+58
+00:05:40,280  -->  00:05:45,880
+It might happen because I update the lecture.
+
+59
+00:05:46,920  -->  00:05:54,640
+In case newer version available which needs
+major change, I will do my best to update the course.
