@@ -1,0 +1,70 @@
+WEBVTT
+
+00:05.520 --> 00:13.530
+Hi guys, in this lesson we will talk about Shovel plugin of RabbitMQ. We can migrate messages
+
+00:13.530 --> 00:17.670
+from one queue to another queue with Shovel plugin.
+
+00:17.970 --> 00:21.060
+It works for queues on the same virtual host.
+
+00:21.510 --> 00:24.870
+We can find it in the queue details page.
+
+00:25.080 --> 00:27.810
+It is under the move section in the detail.
+
+00:28.290 --> 00:30.720
+Shovel is a plugin.
+
+00:30.720 --> 00:34.440
+By default we couldn't find it on RabbitMQ Management Console.
+
+00:34.600 --> 00:37.080
+So first of all we should install it.
+
+00:37.350 --> 00:39.390
+We can install it with a command.
+
+00:39.630 --> 00:48.330
+Actually when we check the move section in the queue details. We can find the install command. We can easily install it with this command.
+
+00:49.410 --> 00:58.110
+We will install the shovel and shovel management console. To use the shovel plugin.
+
+00:58.830 --> 01:03.060
+First of all, we should enable it from the RabbitMQ console.
+
+01:06.620 --> 01:11.440
+After we enabled it, we should log out and log in again.
+
+01:19.130 --> 01:25.050
+Now we can migrate our messages from one queue to another queue.
+
+01:25.160 --> 01:30.210
+To test it we will pick a queue, then we will go into the details of the source queue.
+
+01:30.470 --> 01:33.560
+Then from the move section, we will handle it.
+
+01:33.890 --> 01:40.610
+For example, we can move the message from the topic queue three to the topic queue two.
+
+01:42.020 --> 01:50.210
+But first of all, we will need the destination queue because the shovel moves messages from source queue to destination queue.
+
+01:51.560 --> 01:55.720
+By the way, we cannot move messages partially with the shovel.
+
+01:56.450 --> 01:59.510
+We can only move all queues at a time.
+
+02:01.250 --> 02:06.200
+After we move messages, we can see messages in the destination queue.
+
+02:13.820 --> 02:14.570
+That's all.
+
+02:14.840 --> 02:15.350
+Thank you.
