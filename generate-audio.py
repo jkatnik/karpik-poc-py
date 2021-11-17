@@ -53,7 +53,7 @@ def caption_start(caption):
 
 
 def load_captions(config):
-    if config.captions_format == 'ttv':
+    if config.captions_format == 'vtt':
         return webvtt.read(f'input/{config.captions_file_name}')
     elif config.captions_format == 'srt':
         return webvtt.from_srt(f'input/{config.captions_file_name}')
@@ -63,10 +63,10 @@ def load_captions(config):
 
 if __name__ == '__main__':
     config = InlineClass({
-        'captions_file_name': 'udemy_sample_02.srt',
-        'movie_file_name': 'udemy_sample_02.mp4',
-        'audio_file_name': 'udemy_sample_02.mp3',
-        'captions_format': 'srt',  # srt | ttv
+        'captions_file_name': 'udemy_sample_01.vtt',
+        'movie_file_name': 'udemy_sample_01.mp4',
+        'audio_file_name': 'udemy_sample_01.mp3',
+        'captions_format': 'vtt',  # srt | vtt
         'voice': 'Kevin',  # Joey | Matthew | Kids: Kevin
     })
 
