@@ -68,6 +68,8 @@ if __name__ == '__main__':
     polly_client = boto3.Session().client('polly')
 
     subtitles = webvtt.from_srt(f"{config['subtitles_file_name']}")
+    # TODO add "Czytała Krystyna Karpikówna" at the end of file.
+
     audio_file_name = generate_audio_track(config, subtitles)
 
     input_clip = mpe.VideoFileClip(config['input_file_name'])
