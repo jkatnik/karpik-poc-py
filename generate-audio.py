@@ -33,7 +33,7 @@ def synthesize(text, config):
 
     response = polly_client.synthesize_speech(
         Engine='neural',  # standard|neural - neural nie obsługuje max-duration
-        VoiceId= config.voice,
+        VoiceId=config.voice,
         LanguageCode='en-US',
         OutputFormat='mp3',
         TextType='ssml',  # or text
@@ -52,6 +52,12 @@ def caption_start(caption):
     return seconds
 
 
+def caption_end(caption):
+    nums = [float(n) for n in caption.end.split(':')]
+    seconds = nums[0] * 3600 + nums[1] * 60 + nums[2]
+    return seconds
+
+
 def load_captions(config):
     if config.captions_format == 'vtt':
         return webvtt.read(f'input/{config.captions_file_name}')
@@ -59,6 +65,33 @@ def load_captions(config):
         return webvtt.from_srt(f'input/{config.captions_file_name}')
     else:
         raise Exception('Unsupported subtitles format')
+
+
+# TODO figure out better way of defining break length
+def define_break(diff_length, num_of_pauses):
+    length_of_pause = diff_length / num_of_pauses
+    if diff_length / num_of_pauses > 2:
+        return 1000
+    elif 1 < length_of_pause < 2:
+        return 800
+    else:
+        return 500
+
+
+def extend_sentence_audio(sentence_audio, caption):
+    audio_duration = sentence_audio.duration_seconds
+    caption_start_time = caption_start(caption)
+    caption_end_time = caption_end(caption)
+    diff = ((caption_end_time - caption_start_time) - audio_duration).__round__(3)
+    result = ''
+    split_caption = caption.text.split(',')
+    if len(split_caption) == 1:
+        return sentence_audio
+    for idx, cpt in enumerate(split_caption):
+        result = result + cpt
+        if idx != len(split_caption):
+            result = result + '<break time="{}ms"/>'.format(define_break(diff, len(split_caption) - 1))
+    return synthesize(result, config)
 
 
 if __name__ == '__main__':
@@ -80,6 +113,8 @@ if __name__ == '__main__':
         print(f'Processing {caption}')
         sentence_audio = synthesize(caption.text, config)
 
+        sentence_audio = extend_sentence_audio(sentence_audio, caption)
+
         start = caption_start(caption)
         if audio.duration_seconds < start:
             break_length = (start - audio.duration_seconds) * 1000
@@ -92,4 +127,4 @@ if __name__ == '__main__':
     new_audio = mpe.AudioFileClip(f'output/{config.audio_file_name}')
     # new_audio = mpe.CompositeAudioClip([input_clip.audio, new_audio])
     final_clip = input_clip.set_audio(new_audio)
-    final_clip.write_videofile(f'output/{config.movie_file_name}')
+    final_clip.write_videofile(f'output/output_{config.movie_file_name}')
