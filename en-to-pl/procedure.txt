@@ -1,0 +1,4 @@
+1. use AWS to generate subtiltes from source audio
+2. use AWS to automatically translate subtiltes to Polish
+3. manually fix translation
+4. generate polish audio track, mix audio tracks and generate new video file
