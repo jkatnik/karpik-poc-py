@@ -1,2 +1,5 @@
 # ignore generated output files
 output/
+.idea/
+.idea/misc.xml
+.DS_Store
